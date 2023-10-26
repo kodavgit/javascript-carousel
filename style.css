@@ -1,0 +1,74 @@
+.container {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.carousel {
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 1s;
+}
+
+.slider section{
+    flex-basis: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider section img {
+    width: 100%;
+}
+
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.controls .arrow i {
+    font-size: 40px;
+    color: #f1e103;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #baae04;
+    border-radius: 50px;
+    margin: 10px;
+    background: transparent;
+}
+
+.controls ul li.selected {
+    background: #d1c403;
+}
