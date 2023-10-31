@@ -62,7 +62,7 @@ function autoPlay() {
     
         document.querySelector(".controls .selected").classList.remove("selected");
         indicatorParent.children[sectionIndex].classList.add("selected");
-        slider.style.transform = "translate(" + sectionIndex * -25 + "%)";
+        slider.style.transform = `translate(${sectionIndex * -25}%)`;
     }, 5000)
 }
 autoPlay();
